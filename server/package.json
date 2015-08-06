@@ -1,0 +1,17 @@
+{
+  "name": "node-api",
+  "main": "server.js",
+  "dependencies": {
+    "body-parser": "~1.0.1",
+    "colors": "^0.6.2",
+    "cookie-parser": "latest",
+    "debug": "~2.2.0",
+    "ejs": "latest",
+    "express": "~4.0.0",
+    "express-session": "latest",
+    "method-override": "latest",
+    "mongoose": "^4.0",
+    "shortid": "latest",
+    "winston": "latest"
+  }
+}

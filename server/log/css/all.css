@@ -1,0 +1,500 @@
+/* =============================================================================
+	BODY
+	========================================================================== */
+* {
+    font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+html {
+    -ms-text-size-adjust    : 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing  : antialiased;
+}
+body {
+    margin:0;
+    color:#000;
+    font:12px/1 Arial, Helvetica, sans-serif;
+    background:#fff;
+    -webkit-transition: all 0.4s 0.3s ease-in;
+    transition: all 0.4s 0.3s ease-in;
+}
+/* =============================================================================
+	HTML5
+	========================================================================== */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+audio,
+canvas,
+progress,
+video {
+    display: inline-block; /* 1 */
+    vertical-align: baseline; /* 2 */
+}
+audio:not([controls]) {
+    display: none;
+    height: 0;
+}
+[hidden],
+template {
+    display: none;
+}
+figure {
+    margin:0;
+}
+iframe {
+    border:0;
+}
+/* =============================================================================
+	IMAGES
+	========================================================================== */
+img {
+    border: 0;
+    -ms-interpolation-mode: bicubic;
+    vertical-align: top;
+}
+svg:not(:root) {
+    overflow:hidden;
+}
+/* =============================================================================
+	LINKS
+	========================================================================== */
+a {
+    text-decoration: none;
+    outline: none;
+    background: transparent;
+}
+a:hover {
+    text-decoration:underline;
+}
+a:active,
+a:focus,
+a:hover {
+    outline: 0;
+}
+/* =============================================================================
+	SELECT TEXT
+	========================================================================== */
+::-moz-selection {
+    background:#00f;
+    color:#fff;
+    text-shadow:none;
+}
+::selection {
+    background:#00f;
+    color:#fff;
+    text-shadow:none;
+}
+/* =============================================================================
+	FORMS
+	========================================================================== */
+form, fieldset {
+    margin:0;
+    padding:0;
+    border-style:none;
+}
+label {
+    cursor:pointer;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+optgroup {
+    font-weight: bold;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+input {
+    outline:none;
+}
+button[disabled],
+input[disabled] {
+    cursor:default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+    border:0;
+    padding:0;
+}
+button {
+    overflow: visible;
+    padding:0;
+}
+button,
+select {
+    text-transform: none;
+}
+input[type="checkbox"],
+input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input {
+    line-height: normal;
+}
+input,
+textarea,
+select {
+    font:100% Arial, Helvetica, sans-serif;
+    vertical-align:middle;
+    color:#000;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    height: auto;
+}
+/*Mozilla paddings*/
+button::-moz-focus-inner,
+input[type="reset"]::-moz-focus-inner,
+input[type="button"]::-moz-focus-inner,
+input[type="submit"]::-moz-focus-inner {
+    border: none;
+    padding:0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+    box-sizing: content-box;
+}
+textarea {
+    resize:vertical;
+    margin:0;
+    padding:0;
+    overflow:auto;
+    vertical-align:top;
+    outline:none;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance:none;
+    box-sizing:content-box;
+    -moz-box-sizing:content-box;
+    -webkit-box-sizing:content-box;
+}
+input:-moz-placeholder {
+    color:#000;
+}
+input::-moz-placeholder {
+    color:#000;
+    opacity:1;
+}
+input::-webkit-input-placeholder {
+    color:#000;
+}
+input:-ms-input-placeholder {
+    color:#000;
+}
+input::placeholder {
+    color:#000;
+}
+input:focus:-moz-placeholder {
+    color:transparent;
+}
+input:focus::-moz-placeholder {
+    color:transparent;
+}
+input:focus::-webkit-input-placeholder {
+    color:transparent;
+}
+input:focus:-ms-input-placeholder {
+    color:transparent;
+}
+input:focus::placeholder {
+    color:transparent;
+}
+input::-ms-clear {
+    display:none;
+}
+
+/*Iphone Border Radius Fix*/
+input {
+    -webkit-border-radius:0;
+}
+textarea {
+    -webkit-border-radius:0;
+}
+/* =============================================================================
+	TABLES
+	========================================================================== */
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+td {
+    text-align:left;
+    vertical-align:top;
+}
+th {
+    text-align:center;
+    vertical-align:middle;
+}
+/* =============================================================================
+	QUOTES
+	========================================================================== */
+q {
+    quotes:none;
+}
+q:before {
+    content:''
+}
+q:after {
+    content:''
+}
+/* =============================================================================
+	LISTS
+	========================================================================== */
+ul,
+ol {
+    list-style:none;
+    margin:0 0 10px;
+    padding:0;
+}
+dl {
+    margin:0 0 10px;
+}
+nav ul,
+nav ol {
+    margin:0;
+}
+ul li {
+    list-style:none;
+    list-style:none outside;
+}
+/* =============================================================================
+	SEMANTIC TAG
+	========================================================================== */
+p {
+    margin:0 0 10px;
+}
+h1 {
+    font-size: 30px;
+    line-height: 1.25;
+    margin: 0 0 20px;
+}
+h2 {
+    font-size: 28px;
+    line-height: 1.25;
+    margin: 0 0 18px;
+}
+h3 {
+    font-size: 26px;
+    line-height: 1.2;
+    margin: 0 0 16px;
+}
+h4 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin: 0 0 14px;
+}
+h5 {
+    font-size: 22px;
+    line-height: 1.1;
+    margin: 0 0 12px;
+}
+h6 {
+    font-size:20px;
+    line-height:1.1;
+    margin:0 0 10px;
+}
+abbr[title] {
+    border-bottom: 1px dotted;
+}
+blockquote {
+    margin:0 0 10px;
+}
+dfn {
+    font-style: italic;
+}
+b,
+strong {
+    font-weight:bold;
+}
+sub,
+sup {
+    font-size:75%;
+    line-height:0;
+    position:relative;
+    vertical-align:baseline;
+}
+sub {
+    bottom:-0.25em;
+}
+sup {
+    top:-0.5em;
+}
+small {
+    font-size: 80%;
+}
+hr {
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    height: 0;
+}
+mark {
+    background: #ff0;
+    color: #000;
+}
+ins {
+    text-decoration:none;
+    background:#ff9;
+}
+del {
+    text-decoration:line-through;
+}
+pre {
+    overflow: auto;
+}
+pre,
+code,
+kbd,
+samp {
+    margin:0 0 10px;
+    font:10px/13px Lucida Console, Monaco, monospace;
+}
+/* =============================================================================
+	MOBILE VERSION
+	========================================================================== */
+/*img, embed, object, video {
+    max-width: 100%;
+    height: auto;
+}*/
+/*input[type="image"] {
+    padding:0;
+    border:none;
+}*/
+/* =============================================================================
+	MAIN
+	========================================================================== */
+#wrapper {
+    width:960px;
+    margin:0 auto;
+    height: 100%;
+}
+html, body {
+    height: 100%;
+}
+body {
+    background-color: #f5f5f5;
+}
+table {
+    width: 100%;
+    margin-bottom: 2rem;
+    background-color: #ffffff;
+    table-layout: fixed
+}
+tr {
+    padding: 5px;
+    border: 1px solid black;
+}
+h3 {
+    margin: 0;
+}
+.warn td {
+    background: #aefa75;
+    color: #000;
+    text-align: center;
+}
+.error td {
+    background: #fa7d77;
+    color: #fff;
+}
+.info td {
+    background: #EAFF3D;
+    color: #000;
+    text-align: center;
+}
+p {
+    font-size: 14px;
+    margin: 0;
+}
+/* =============================================================================
+	HasLayot
+	========================================================================== */
+.group:after {
+    display:block;
+    content:"";
+    clear:both;
+}
+.wrapper {
+    width:100%;
+    overflow:hidden;
+}
+/* =============================================================================
+	TextReplace
+	========================================================================== */
+.tr {
+    text-indent:-9999px;
+    overflow:hidden;
+    font-size:0;
+    line-height:0;
+    white-space: nowrap;
+}
+/* =============================================================================
+	Hide object
+	========================================================================== */
+.hidden {
+    display:none;
+}
+.invisible {
+    visibility:hidden;
+}
+.visualhidden {
+    position:absolute;
+    top:-9999px;
+    left:-9999px;
+}
+/* =============================================================================
+	Print styles.
+   ========================================================================== */
+@media print {
+    * {
+        background:transparent !important;
+        color:#000 !important; /* Black prints faster:h5bp.com/s */
+        box-shadow:none !important;
+        text-shadow:none !important;
+    }
+    a, a:visited {text-decoration:underline;}
+    a[href]:after {content:" (" attr(href) ")";}
+    abbr[title]:after {content:" (" attr(title) ")";}
+
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {content:"";}
+
+    pre, blockquote {border:1px solid #999; page-break-inside:avoid;}
+
+    thead {display:table-header-group;}
+    tr, img {page-break-inside:avoid;}
+    img {max-width:100% !important;}
+
+    @page {margin:0.5cm;}
+
+    p, h2, h3 {
+        orphans:3;
+        widows:3;
+    }
+    h2, h3 {page-break-after:avoid;}
+}

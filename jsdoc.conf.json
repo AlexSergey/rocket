@@ -1,0 +1,36 @@
+{
+    "plugins": [
+        "node_modules/jsdoc-jsx"
+    ],
+    "source": {
+        "include": ["README.md"],
+        "includePattern": ".+\\.js(x)?$",
+        "excludePattern": "(^|\\/|\\\\)_"
+    },
+    "jsx": {
+        "extensions": ["js", "jsx"],
+        "es6": true,
+        "es6module": true
+    },
+    "opts": {
+        "destination": "./documentation/",
+        "private": true,
+        "recurse": true
+    },
+    "templates": {
+        "logo": "./images/logo_rocket.jpg",
+        "logoSignature": "Documentation",
+        "styles": {
+            "header": {
+                "color": "#ccc"
+            }
+        },
+        "default": {
+            "staticFiles": {
+                "include": ["./jsdocs.settings/files/"]
+            },
+            "layoutFile": "./jsdocs.settings/layout.tmpl"
+        },
+        "copyright": "&copy; Aleksandrov Sergey, ROCKET REACT 1.0"
+    }
+}

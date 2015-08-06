@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>JSDoc: <?js= title ?></title>
+
+    <script src="scripts/prettify/prettify.js"> </script>
+    <script src="scripts/prettify/lang-css.js"> </script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/jsdoc-default.css">
+    <link type="text/css" rel="stylesheet" href="css/all.css">
+</head>
+
+<body>
+<div id="main">
+    <nav>
+        <?js= this.nav ?>
+    </nav>
+    <div class="content">
+        <?js if(env.conf.templates.logo) { ?><header id="header" style="background-color: <?js= env.conf.templates.styles.header.color ?>">
+        <img class="logo" src="<?js= env.conf.templates.logo ?>" />
+        <?js if(env.conf.templates.logoSignature) { ?>
+        <div class="logo-signature"><h2><?js= env.conf.templates.logoSignature ?></h2></div>
+        <?js } ?>
+        </header><?js } ?>
+
+        <?js= content ?>
+
+        <footer>
+            <?js= env.conf.templates.copyright ?> <?js if(env.conf.templates && env.conf.templates.default && env.conf.templates.default.includeDate !== false) { ?> on <?js= (new Date()) ?><?js } ?>
+        </footer>
+    </div>
+</div>
+
+<script> prettyPrint(); </script>
+<script src="scripts/linenumber.js"> </script>
+</body>
+</html>

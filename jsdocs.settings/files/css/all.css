@@ -1,0 +1,71 @@
+html, body {
+    height: 100%;
+}
+body {
+    margin: 0;
+}
+
+nav {
+    display: table-cell;
+    width: 30%;
+    box-sizing: border-box;
+    background: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    float: none;
+    border-left: 1px solid #ccc;
+    vertical-align: top;
+}
+#main {
+    overflow: auto;
+    display: table;
+    width: 100%;
+    height: 100%;
+    table-layout:fixed;
+}
+.content {
+    display: table-cell;
+    vertical-align: top;
+}
+nav h2 {
+    background: #0095dd;
+    padding: 0 20px;
+    font-size: 26px;
+    height: 50px;
+    line-height: 50px;
+}
+nav h2 a {
+    color: #000 !important;
+}
+nav h3 a {
+    font-size: 20px;
+}
+nav h2, nav h3 {
+    padding: 0 40px;
+}
+nav ul {
+    padding: 0 20px;
+}
+.content #header {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+}
+#header .logo {
+    width: auto;
+    display: inline;
+    height: 100%;
+}
+#header .logo-signature {
+    float: right;
+    margin: 0 10px 0 0;
+}
+nav li a {
+    color: #fff !important;
+    text-decoration: underline !important;
+}
+nav li a:hover {
+    text-decoration: none !important;
+}

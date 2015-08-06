@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width">
+
+    <title></title>
+
+    <link media="all" rel="stylesheet" type="text/css" href="css/all.css" />
+
+    <script src="./js/libs/jquery-1.11.0.js"></script>
+    <script src="./js/libs/handlebars-v2.0.0.js"></script>
+    <script src="./js/libs/moment-with-locales.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+
+    </div>
+
+    <script id="template" type="text/x-handlebars-template">
+        <table>
+            {{#each data}}
+                <tr class={{this.level}}>
+                    <td>
+                        {{#ifCond this.level 'warn'}}<h3>{{this.message}}</h3>{{else}}<p>{{this.message}}</p>{{/ifCond}}
+                    </td>
+                    <td>
+                        <span>{{formatDate this.timestamp}}</span>
+                    </td>
+                </tr>
+            {{/each}}
+        </table>
+    </script>
+</body>
+</html>
