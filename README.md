@@ -1,6 +1,6 @@
-<p align="center"><h1>Rocket React</h1></p>
+<h1 style="text-align: center">Rocket React</h1>
 
-<a href="http://gooddev.org/"><img src="http://gooddev.org/rocket/logo_rocket.jpg" alt="Use boilerplate from https://github.com/AlexSergey/rocket" /></a>
+<p style="text-align: center"><a href="http://gooddev.org/"><img src="http://gooddev.org/rocket/logo_rocket.jpg" alt="Use boilerplate from https://github.com/AlexSergey/rocket" /></a></p>
 
 ## This is test boilerplate of React + Babel + Backbone + Node + Mongo
 
