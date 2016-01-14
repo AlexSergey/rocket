@@ -20,12 +20,6 @@ module.exports = function() {
             .pipe(clean());
     });
 
-    gulp.task('htmlWatch', function() {
-        watch(config.source.index, function() {
-            gulp.start('jsLibs')
-        });
-    });
-
     gulp.task('imagesWatch', function() {
         watch(config.source.images + '**/*', function() {
             runSequence('cleanImgs', ['images']);

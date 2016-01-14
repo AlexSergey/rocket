@@ -26,8 +26,7 @@ gulp.task('w', [
     'cssWatch',
     'jsWatch',
     'imagesWatch',
-    'fontsWatch',
-    'htmlWatch'
+    'fontsWatch'
 ]);
 
 gulp.task('test', [
